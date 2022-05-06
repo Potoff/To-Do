@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Ankaachien.ico" type="image/x-icon">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Créer une tâche</legend>
+                    <label for="task-title">Donnez un titre à la tâche : </label>
+                    <input type="text" name="task-title" id="task-title">
+                    <label for="description">Décrivez la tâche : </label>
+                    <textarea name="description" id="description" cols="15" rows="5"></textarea>
+                    <label for="state">Choissisez un statut pour la tâche : </label>
+                    <select name="state" id="state">
+                        <option value="">Choisir une option</option>
+                        <option value="En cours">En cours</option>
+                        <option value="Terminée">Terminée</option>
+                        <option value="En attente">En attente</option>
+                        <option value="A faire">A faire</option>
+                    </select>
+                    <i type="button" id="addTask" class="bi bi-plus-circle"></i>
+                </fieldset>
+
+            </form>
+        </div>
+        <div class="content">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
